@@ -11,4 +11,5 @@ const sleepAndPrint = async (end) => {
         setTimeout( () => {console.log(i); resolve()}, 1000)
        })
     }
+    parentPort.close()
 }
